@@ -25,6 +25,14 @@ from pytorch_grad_cam.utils.image import show_cam_on_image
 # 1. MODEL ARCHITECTURE (SAME AS YOUR TRAINING CODE)
 # =========================================================
 
+app = Flask(__name__)
+CORS(app)
+
+@app.after_request
+def add_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    return response
+
 class CNNBlock(nn.Module):
     def __init__(self, input_shape: int, hidden_units: int, output_shape: int):
         super().__init__()

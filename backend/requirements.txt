@@ -5,3 +5,4 @@ torchvision
 Pillow
 opencv-python
 numpy
+pytorch-grad-cam
