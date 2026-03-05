@@ -67,7 +67,7 @@ Dataset split:
 
 | Metric | Score |
 |------|------|
-| Accuracy | **93%** |
+| Accuracy | **94.47%** |
 | AUC Score | **0.98** |
 | Precision | 0.93 |
 | Recall | 0.93 |
